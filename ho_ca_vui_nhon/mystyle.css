@@ -1,0 +1,123 @@
+#shark{
+    left:100px; top:400px;
+    position: absolute;
+    animation-name: Shark;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+@keyframes Shark {
+    0%   { left: 600px; top: 300px; transform: scaleX(1); }
+    5%   { left: 700px; top: 400px; transform: scaleX(1); }
+    10%  { left: 1000px; top: 500px; transform: scaleX(1); }
+    12%  { left: 1000px; top: 500px; transform: scaleX(-1); }
+    20%  { left: 600px; top: 500px; transform: scaleX(-1); }
+    28%  { left: 400px; top: 300px; transform: scaleX(-1); }
+    30%  { left: 400px; top: 300px; transform: scaleX(1); }
+    43%  { left: 700px; top: 200px; transform: scaleX(1); }
+    45%  { left: 700px; top: 200px; transform: scaleX(-1); }
+    58%  { left: 400px; top: 500px; transform: scaleX(-1); }
+    60%  { left: 400px; top: 500px; transform: scaleX(1); }
+    75%  { left: 700px; top: 600px; transform: scaleX(1); }
+    78%  { left: 750px; top: 500px; transform: scaleX(1); }
+    80%  { left: 750px; top: 500px; transform: scaleX(-1); }
+    93%  { left: 500px; top: 200px; transform: scaleX(-1); }
+    95%  { left: 500px; top: 200px; transform: scaleX(1); }
+    100% { left: 600px; top: 300px; transform: scaleX(1); }
+}
+#diver1 {
+    left: 100px;
+    top: 400px;
+    position: absolute;
+    animation-name: freeSwim;
+    animation-duration: 45s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+
+@keyframes freeSwim {
+    0%   { left: 100px; top: 100px; transform: rotateY(0deg); }
+    25%  { left: 500px; top: 550px; transform: rotateY(0deg);}
+    50%  { left: 800px; top: 100px; transform: rotateY(0deg);}
+    51%  { left: 800px; top: 100px; transform: rotateY(180deg);}
+    75%  { left: 400px; top: 600px; transform: rotateY(180deg);}
+    75.1%  { left: 400px; top: 600px; transform: rotateY(180deg);}
+    99% { left: 100px; top: 100px; transform: rotateY(180deg);}
+    100% { left: 100px; top: 100px; transform: rotateY(0deg);}
+}
+#diver2 {
+    left: 300px;
+    top: 200px;
+    position: absolute;
+    animation-name: freeSwim2;
+    animation-duration: 44s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+@keyframes freeSwim2 {
+    0%   { left: 500px; top: 100px; transform: rotateY(0deg); }
+    25%  { left: 700px; top: 600px; transform: rotateY(0deg);}
+    49%  { left: 900px; top: 100px; transform: rotateY(0deg);}
+    50%  { left: 850px; top: 100px; transform: rotateY(180deg);}
+    75%  { left: 400px; top: 600px; transform: rotateY(180deg);}
+    75.1%  { left: 400px; top: 600px; transform: rotateY(0deg);}
+    100% { left: 500px; top: 100px; transform: rotateY(0deg);}
+}
+#diver3 {
+    left: 700px;
+    top: 200px;
+    position: absolute;
+    animation-name: freeSwim3;
+    animation-duration: 55s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+@keyframes freeSwim3 {
+    0%   { left: 700px; top: 100px; transform: rotateY(0deg); }
+    25%  { left: 1200px; top: 600px; transform: rotateY(0deg);}
+    25.1%  { left: 1200px; top: 600px; transform: rotateY(180deg);}
+    50%  { left: 500px; top: 100px; transform: rotateY(180deg);}
+    75%  { left: 0px; top: 600px; transform: rotateY(180deg);}
+    75.1%  { left: 0px; top: 600px; transform: rotateY(0deg);}
+    100% { left: 700px; top: 100px; transform: rotateY(0deg);}
+}
+#turtle {
+    left: 0px;
+    top: 500px;
+    position: absolute;
+    animation-name: leftright ;
+    animation-duration: 50s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+@keyframes leftright {
+    0%   { left: 0px; top: 600px; transform: rotateY(0deg); }
+    49.5%  { left: 1450px; top: 600px; transform: rotateY(0deg);}
+    50%  { left: 1450px; top: 600px; transform: rotateY(180deg);}
+    99% { left: 0px; top: 600px; transform: rotateY(180deg);}
+    100% { left: 0px; top: 600px; transform: rotateY(0deg);}
+}
+#goldFishSchool {
+    left: 0px;
+    top: 500px;
+    position: absolute;
+    animation-name: goldFishSchool1 ;
+    animation-duration: 20s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+@keyframes goldFishSchool1 {
+    0%   { left: 300px; top: 200px; transform: rotateY(0deg); }
+    25%  { left: 700px; top: 400px; transform: rotateY(0deg); }
+    49%  { left: 1200px; top: 200px; transform: rotateY(0deg); }
+    50%  { left: 1200px; top: 200px; transform: rotateY(180deg); }
+    75%  { left: 200px; top: 500px; transform: rotateY(180deg); }
+    75.1% { left: 200px; top: 500px; transform: rotateY(0deg); }
+    100% { left: 300px; top: 200px; transform: rotateY(0deg); }
+}
