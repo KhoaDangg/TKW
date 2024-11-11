@@ -15,7 +15,8 @@
       font-family: Arial, sans-serif;
       background: linear-gradient(135deg, #4ca3af, #1f4f55);
       color: #fff;
-      position: relative; /* Cần thiết cho các phần tử tuyệt đối */
+      flex-direction: column; /* Đảm bảo các phần tử được sắp xếp theo cột */
+      text-align: center;
     }
 
     /* Định dạng cho điều hướng */
@@ -65,20 +66,13 @@
 
     /* Định dạng cho dòng chữ "Nộp bài" */
     .submit-text {
-      position: absolute;
-      top: 40%; /* Vị trí từ trên xuống */
-      left: 50%;
-      transform: translate(-50%, -50%); /* Căn giữa */
       font-size: 2.5em;
       font-weight: bold;
+      margin-bottom: 20px; /* Khoảng cách dưới dòng chữ "Nộp bài" */
     }
 
     /* Định dạng cho dòng chữ "Đặng Trần Anh Khoa" */
     .author-name {
-      position: absolute;
-      top: 50%; /* Vị trí từ trên xuống */
-      left: 50%;
-      transform: translate(-50%, -50%); /* Căn giữa */
       font-size: 2em;
       font-weight: normal;
     }
@@ -91,7 +85,11 @@
       <li><a target="_blank" href="ho_ca.html">Trang hồ cá</a></li>
     </ul>
   </nav>
-  <div class="submit-text">Nộp bài tập giữa kì</div>
+
+  <!-- Dòng chữ "Nộp bài" -->
+  <div class="submit-text">Nộp bài</div>
+
+  <!-- Dòng chữ "Đặng Trần Anh Khoa" -->
   <div class="author-name">Đặng Trần Anh Khoa</div>
 </body>
 </html>
