@@ -36,12 +36,14 @@
             display: inline-block; /* Thay đổi để box tự động điều chỉnh theo kích thước ảnh */
             margin-left: auto;
             margin-right: auto;
+            padding: 0; /* Đảm bảo không có padding dư thừa trong box */
         }
 
         .image-card img {
             width: 100%; /* Ảnh chiếm trọn chiều rộng của thẻ chứa */
             height: auto; /* Chiều cao tự động điều chỉnh theo tỷ lệ gốc */
             display: block;
+            margin: 0 auto; /* Căn giữa ảnh */
         }
 
         /* Giảm kích thước mạnh cho ảnh 4, 5, 6 và 9 */
@@ -84,7 +86,7 @@
         <img src="photo/photo5.jpg" alt="Ảnh 5">
     </div>
     <div class="image-card">
-        <img src="photo/photo6.JPG" alt="Ảnh 6">
+        <img src="photo/photo6.jpg" alt="Ảnh 6">
     </div>
     <div class="image-card">
         <img src="photo/photo7.jpg" alt="Ảnh 7">
