@@ -4,8 +4,71 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Index</title>
+    <style>
+      /* Đặt nền và căn giữa nội dung */
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f0f8ff; /* Màu nền nhẹ nhàng */
+      }
+
+      /* Hộp chứa tên */
+      .header-box {
+        width: 100%;
+        background-color: #4ca3af; /* Màu nền cho hộp tên */
+        color: white;
+        text-align: center;
+        padding: 15px 0;
+        font-size: 24px;
+        font-weight: bold;
+      }
+
+      /* Định dạng phần điều hướng */
+      nav {
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        padding: 20px 40px;
+        margin-top: 20px; /* Khoảng cách từ hộp tên đến menu */
+      }
+
+      /* Danh sách điều hướng */
+      nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        gap: 20px;
+      }
+
+      /* Liên kết */
+      nav ul li a {
+        text-decoration: none;
+        color: #333;
+        font-size: 18px;
+        font-weight: bold;
+        padding: 10px 20px;
+        border-radius: 4px;
+        transition: background-color 0.3s, color 0.3s;
+      }
+
+      /* Hiệu ứng hover cho liên kết */
+      nav ul li a:hover {
+        background-color: #4ca3af;
+        color: #fff;
+      }
+    </style>
   </head>
   <body>
+    <!-- Hộp chứa tên -->
+    <div class="header-box">Đặng Trần Anh Khoa</div>
+
+    <!-- Phần điều hướng -->
     <nav>
       <ul>
         <li><a target="_blank" href="CV/CV.html">Trang cá nhân</a></li>
