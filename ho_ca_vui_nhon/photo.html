@@ -22,7 +22,7 @@
 
         .container {
             display: grid;
-            grid-template-columns: 1fr;
+            grid-template-columns: 1fr; /* Một cột duy nhất */
             gap: 10px;
             padding: 20px;
         }
@@ -33,28 +33,30 @@
             overflow: hidden;
             border-radius: 8px;
             margin-bottom: 10px;
-            width: 90%;
+            width: 90%; /* Giảm chiều rộng ảnh */
             margin-left: auto;
-            margin-right: auto;
+            margin-right: auto; /* Căn giữa ảnh */
         }
 
         .image-card img {
-            width: 100%;
-            height: auto;
+            width: 100%; /* Ảnh chiếm trọn chiều rộng của thẻ chứa */
+            height: auto; /* Chiều cao tự động điều chỉnh theo tỷ lệ gốc */
             display: block;
         }
 
-        .caption {
-            display: none;
-        }
-
-        /* CSS riêng cho ảnh dọc */
-        .portrait img {
-            width: 80%; /* Giảm chiều rộng ảnh dọc */
+        /* Giảm kích thước cho ảnh 4, 5 và 9 */
+        .image-card img:nth-child(4),
+        .image-card img:nth-child(5),
+        .image-card img:nth-child(9) {
+            max-width: 80%; /* Giảm chiều rộng ảnh xuống còn 80% */
             margin-left: auto;
             margin-right: auto;
         }
 
+        /* Bỏ phần caption */
+        .caption {
+            display: none;
+        }
     </style>
 </head>
 <body>
@@ -64,7 +66,8 @@
 </header>
 
 <div class="container">
-    <div class="image-card portrait">
+    <!-- Các ảnh được hiển thị ở đây -->
+    <div class="image-card">
         <img src="photo/photo1.jpg" alt="Ảnh 1">
     </div>
     <div class="image-card">
@@ -73,7 +76,7 @@
     <div class="image-card">
         <img src="photo/photo3.jpg" alt="Ảnh 3">
     </div>
-    <div class="image-card portrait">
+    <div class="image-card">
         <img src="photo/photo4.jpg" alt="Ảnh 4">
     </div>
     <div class="image-card">
@@ -82,7 +85,7 @@
     <div class="image-card">
         <img src="photo/photo6.jpg" alt="Ảnh 6">
     </div>
-    <div class="image-card portrait">
+    <div class="image-card">
         <img src="photo/photo7.jpg" alt="Ảnh 7">
     </div>
     <div class="image-card">
@@ -92,22 +95,6 @@
         <img src="photo/photo9.jpg" alt="Ảnh 9">
     </div>
 </div>
-
-<script>
-    // JavaScript để kiểm tra tỷ lệ ảnh và thêm class cho ảnh dọc
-    const images = document.querySelectorAll('.image-card img');
-
-    images.forEach(img => {
-        img.onload = function() {
-            const aspectRatio = img.naturalHeight / img.naturalWidth;
-
-            // Kiểm tra nếu ảnh có tỷ lệ chiều cao lớn hơn chiều rộng (ảnh dọc)
-            if (aspectRatio > 1) {
-                img.parentElement.classList.add('portrait');
-            }
-        };
-    });
-</script>
 
 </body>
 </html>
