@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Kho Ảnh</title>
+    <style>
+        body {
+            font-family: 'Nunito', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            font-size: 1.8em;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 10px;
+            padding: 20px;
+        }
+
+        .image-card {
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            border-radius: 8px;
+        }
+
+        .image-card img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .caption {
+            padding: 10px;
+            background-color: #ecf0f1;
+            text-align: left;
+            font-size: 1em;
+            color: #2c3e50;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Chào mừng đến với Kho Ảnh Của Tôi</h1>
+</header>
+
+<div class="container">
+    <!-- Các ảnh được hiển thị ở đây -->
+    <div class="image-card">
+        <img src="photo/photo1.jpg" alt="Ảnh 1">
+        <div class="caption">Ảnh 1</div>
+    </div>
+    <div class="image-card">
+        <img src="photo/photo2.jpg" alt="Ảnh 2">
+        <div class="caption">Ảnh 2</div>
+    </div>
+    <div class="image-card">
+        <img src="photo/photo3.jpg" alt="Ảnh 3">
+        <div class="caption">Ảnh 3</div>
+    </div>
+    <div class="image-card">
+        <img src="photo/photo4.jpg" alt="Ảnh 4">
+        <div class="caption">Ảnh 4</div>
+    </div>
+    <div class="image-card">
+        <img src="photo/photo5.jpg" alt="Ảnh 5">
+        <div class="caption">Ảnh 5</div>
+    </div>
+    <div class="image-card">
+        <img src="photo/photo6.jpg" alt="Ảnh 6">
+        <div class="caption">Ảnh 6</div>
+    </div>
+    <div class="image-card">
+        <img src="photo/photo7.jpg" alt="Ảnh 7">
+        <div class="caption">Ảnh 7</div>
+    </div>
+    <div class="image-card">
+        <img src="photo/photo8.jpg" alt="Ảnh 8">
+        <div class="caption">Ảnh 8</div>
+    </div>
+    <div class="image-card">
+        <img src="photo/photo9.jpg" alt="Ảnh 9">
+        <div class="caption">Ảnh 9</div>
+    </div>
+</div>
+</body>
+</html>
