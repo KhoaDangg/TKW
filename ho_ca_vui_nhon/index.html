@@ -1,16 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Index</title>
-  </head>
-  <body>
-    <nav>
-      <ul>
-        <li><a target="_blank" href="CV/CV.html">Trang cá nhân</a></li>
-        <li><a target="_blank" href="ho_ca.html">Trang hồ cá</a></li>
-      </ul>
-    </nav>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Index</title>
+  <style>
+    /* Đặt nền và căn giữa nội dung */
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #4ca3af, #1f4f55);
+      color: #fff;
+    }
+
+    /* Định dạng cho điều hướng */
+    nav {
+      background-color: #ffffff20; /* Màu nền có độ trong suốt */
+      padding: 20px 40px;
+      border-radius: 10px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Danh sách liên kết điều hướng */
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    /* Định dạng liên kết */
+    nav ul li a {
+      text-decoration: none;
+      color: #ffffff;
+      font-size: 20px;
+      font-weight: bold;
+      padding: 10px 20px;
+      border: 2px solid #ffffff60;
+      border-radius: 8px;
+      transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    }
+
+    /* Hiệu ứng hover cho liên kết */
+    nav ul li a:hover {
+      background-color: #ffffff;
+      color: #4ca3af;
+      border-color: #ffffff;
+    }
+
+    /* Hiệu ứng khi nhấn vào liên kết */
+    nav ul li a:active {
+      transform: scale(0.98);
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a target="_blank" href="CV/CV.html">Trang cá nhân</a></li>
+      <li><a target="_blank" href="ho_ca.html">Trang hồ cá</a></li>
+    </ul>
+  </nav>
+</body>
 </html>
