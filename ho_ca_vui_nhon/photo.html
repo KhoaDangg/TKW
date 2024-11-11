@@ -20,11 +20,14 @@
             font-size: 1.8em;
         }
 
+        /* Đảm bảo các ảnh chiếm chiều cao gần hết màn hình */
         .container {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            grid-template-columns: 1fr; /* Sử dụng một cột duy nhất */
             gap: 10px;
             padding: 20px;
+            height: 100vh;
+            overflow-y: scroll;
         }
 
         .image-card {
@@ -32,20 +35,19 @@
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
             overflow: hidden;
             border-radius: 8px;
+            margin-bottom: 10px;
         }
 
         .image-card img {
             width: 100%;
-            height: auto;
+            height: 80vh; /* Điều chỉnh ảnh chiếm gần hết chiều cao màn hình */
+            object-fit: cover;
             display: block;
         }
 
+        /* Bỏ phần caption */
         .caption {
-            padding: 10px;
-            background-color: #ecf0f1;
-            text-align: left;
-            font-size: 1em;
-            color: #2c3e50;
+            display: none;
         }
     </style>
 </head>
@@ -59,40 +61,32 @@
     <!-- Các ảnh được hiển thị ở đây -->
     <div class="image-card">
         <img src="photo/photo1.jpg" alt="Ảnh 1">
-        <div class="caption">Ảnh 1</div>
     </div>
     <div class="image-card">
         <img src="photo/photo2.jpg" alt="Ảnh 2">
-        <div class="caption">Ảnh 2</div>
     </div>
     <div class="image-card">
         <img src="photo/photo3.jpg" alt="Ảnh 3">
-        <div class="caption">Ảnh 3</div>
     </div>
     <div class="image-card">
         <img src="photo/photo4.jpg" alt="Ảnh 4">
-        <div class="caption">Ảnh 4</div>
     </div>
     <div class="image-card">
         <img src="photo/photo5.jpg" alt="Ảnh 5">
-        <div class="caption">Ảnh 5</div>
     </div>
     <div class="image-card">
         <img src="photo/photo6.jpg" alt="Ảnh 6">
-        <div class="caption">Ảnh 6</div>
     </div>
     <div class="image-card">
         <img src="photo/photo7.jpg" alt="Ảnh 7">
-        <div class="caption">Ảnh 7</div>
     </div>
     <div class="image-card">
         <img src="photo/photo8.jpg" alt="Ảnh 8">
-        <div class="caption">Ảnh 8</div>
     </div>
     <div class="image-card">
         <img src="photo/photo9.jpg" alt="Ảnh 9">
-        <div class="caption">Ảnh 9</div>
     </div>
 </div>
+
 </body>
 </html>
