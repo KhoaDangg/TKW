@@ -20,7 +20,6 @@
             font-size: 1.8em;
         }
 
-        /* Đảm bảo các ảnh chiếm chiều cao gần hết màn hình */
         .container {
             display: grid;
             grid-template-columns: 1fr; /* Sử dụng một cột duy nhất */
@@ -40,8 +39,8 @@
 
         .image-card img {
             width: 100%;
-            height: 80vh; /* Điều chỉnh ảnh chiếm gần hết chiều cao màn hình */
-            object-fit: cover;
+            height: 100%; /* Đảm bảo ảnh chiếm hết chiều cao container */
+            object-fit: contain; /* Hiển thị ảnh đầy đủ, không cắt */
             display: block;
         }
 
