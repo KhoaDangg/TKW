@@ -33,7 +33,7 @@
             overflow: hidden;
             border-radius: 8px;
             margin-bottom: 10px;
-            width: 90%; /* Giảm chiều rộng ảnh */
+            display: inline-block; /* Để box có thể thay đổi kích thước theo ảnh */
             margin-left: auto;
             margin-right: auto; /* Căn giữa ảnh */
         }
@@ -44,23 +44,17 @@
             display: block;
         }
 
-        .image-card:nth-child(4) img,
-        .image-card:nth-child(5) img,
-        .image-card:nth-child(6) img,
-        .image-card:nth-child(9) img {
-            width: 50%; /* Giảm kích thước ảnh còn 50% */
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        /* Thu gọn box chứa các ảnh 4, 5, 6 và 9 */
+        /* Box ảnh 4, 5, 6 và 9 tự động điều chỉnh kích thước */
         .image-card:nth-child(4),
         .image-card:nth-child(5),
         .image-card:nth-child(6),
         .image-card:nth-child(9) {
-            width: 50%; /* Thu gọn box chứa ảnh về 50% chiều rộng */
-            margin-left: auto;
-            margin-right: auto;
+            width: auto; /* Box sẽ chỉ rộng bằng với kích thước ảnh */
+        }
+
+        /* Bỏ phần caption */
+        .caption {
+            display: none;
         }
     </style>
 </head>
@@ -88,7 +82,7 @@
         <img src="photo/photo5.jpg" alt="Ảnh 5">
     </div>
     <div class="image-card">
-        <img src="photo/photo6.JPG" alt="Ảnh 6">
+        <img src="photo/photo6.jpg" alt="Ảnh 6">
     </div>
     <div class="image-card">
         <img src="photo/photo7.jpg" alt="Ảnh 7">
