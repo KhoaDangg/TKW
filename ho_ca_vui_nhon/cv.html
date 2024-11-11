@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - NGUYEN VAN A</title>
+    <!-- Liên kết với Google Fonts để sử dụng font Nunito -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Áp dụng font Nunito */
+        body {
+            font-family: 'Nunito', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            display: flex;
+            max-width: 900px;
+            margin: 20px auto;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .left-column {
+            width: 30%;
+            background: #2c3e50;
+            color: #fff;
+            padding: 20px;
+            text-align: left;
+        }
+        .right-column {
+            width: 70%;
+            padding: 20px;
+        }
+        h1 {
+            margin-bottom: 5px;
+            font-size: 1.8em;
+        }
+        h2 {
+            border-bottom: 2px solid #ecf0f1;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .contact-info, .skills {
+            list-style: none;
+            padding: 0;
+        }
+        .contact-info li, .skills li {
+            margin-bottom: 10px;
+        }
+        .contact-info li span, .skills li span {
+            font-weight: bold;
+        }
+        .about-me {
+            font-size: 1.1em;
+            line-height: 1.6;
+            color: #fff;
+            margin-top: 20px;
+        }
+        /* Thêm style cho thanh tiến độ */
+        .progress-bar {
+            width: 100%;
+            height: 10px;
+            background-color: #ecf0f1;
+            border-radius: 5px;
+            margin-top: 5px;
+        }
+        .progress-bar span {
+            display: block;
+            height: 100%;
+            border-radius: 5px;
+        }
+        .photoshop { width: 38%; background-color: #3498db; }
+        .html { width: 20%; background-color: #e67e22; }
+        .css { width: 25%; background-color: #f39c12; }
+        .javascript { width: 5%; background-color: #f39c12; }
+        
+        /* Thêm hiệu ứng hover */
+        .skills li:hover {
+            background-color: #34495e;
+            color: #fff;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="left-column">
+        <!-- Profile header with image -->
+        <div class="profile-header">
+            <img src="images/photo.jpg" alt="Profile Photo" style="width: 120px; height: 120px; border-radius: 50%; margin-bottom: 10px;">
+        </div>
+        <!-- About Me in left-column -->
+        <div class="section">
+            <h2>ABOUT ME</h2>
+            <p class="about-me">Sinh viên K50 tại trường Đại Học Sư Phạm Thành Phố Hồ Chí Minh</p>
+        </div>
+        <div class="section">
+            <h2>CONTACT INFO</h2>
+            <ul class="contact-info">
+                <li><span>Address:</span> Chung cư Westgate C1-14.12A</li>
+                <li><span>Phone:</span> 0913895507</li>
+                <li><span>Email:</span> dangtranK50@gmail.com</li>
+            </ul>
+        </div>
+        <div class="section">
+            <h2>SKILLS</h2>
+            <ul class="skills">
+                <li>
+                    <span>Photography</span>
+                    <div class="progress-bar">
+                        <span class="photoshop"></span>
+                    </div>
+                    <span>Trung cấp</span>
+                </li>
+                <li>
+                    <span>HTML</span>
+                    <div class="progress-bar">
+                        <span class="html"></span>
+                    </div>
+                    <span>Nhập môn</span>
+                </li>
+                <li>
+                    <span>CSS</span>
+                    <div class="progress-bar">
+                        <span class="css"></span>
+                    </div>
+                    <span>Nhập môn</span>
+                </li>
+                <li>
+                    <span>Javascript</span>
+                    <div class="progress-bar">
+                        <span class="javascript"></span>
+                    </div>
+                    <span>Nhập môn</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="right-column">
+        <!-- Name moved here -->
+        <h1>ĐẶNG TRẦN ANH KHOA</h1>
+
+        <div class="section">
+            <h2>MỤC TIÊU TƯƠNG LAI</h2>
+            <p> Bản thân là một sinh viên ngành Công Nghệ Thông Tin, tôi mong muốn trở thành lập trình viên giỏi, chuyên sâu về phần mềm, an ninh mạng và ứng dụng di động. Tôi sẽ tiếp tục học hỏi, cập nhật xu hướng công nghệ mới và tham gia các dự án thực tế để phát triển kỹ năng và đóng góp cho cộng đồng công nghệ.</p>
+            <p><strong>2014-2016:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="section">
+            <h2>HỌC VẤN</h2>
+            <p><strong>2021-2024:</strong> Theo học tại trường THPT Nguyễn Du-Bảo Lộc.</p>
+            <p><strong>Hiện tại:</strong> Theo học tại trường Đại Học Sư Phạm Thành Phố Hồ Chí Minh - HCMUE</p>
+        </div>
+
+        <!-- Added random text section -->
+        <div class="section">
+            <h2>SỞ THÍCH</h2>
+            <p>Bên cạnh mong muốn học tập, tôi có thêm một sở thích đặc biệt với <strong>chụp ảnh</strong>. Với mong muốn có thể bắt trọn được những khoảng khắc trong cuộc đời mình.
+            </p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
