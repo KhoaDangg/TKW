@@ -86,14 +86,22 @@
             transition: 0.3s;
         }
 
-        /* Căn giữa bức ảnh mà không làm biến dạng */
-        .profile-header img {
+        /* Căn giữa ảnh vuông và không làm biến dạng */
+        .profile-header {
             width: 120px;
             height: 120px;
-            border-radius: 50%;
+            border-radius: 50%; /* Căn tròn ảnh */
             margin: 0 auto;
-            display: block; /* Để căn giữa ảnh */
-            object-fit: cover; /* Giữ tỷ lệ ảnh mà không bị biến dạng */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden; /* Đảm bảo ảnh không tràn ra ngoài */
+        }
+
+        .profile-header img {
+            width: 100%; /* Đảm bảo ảnh chiếm hết diện tích của thẻ chứa */
+            height: 100%; /* Chiều cao của ảnh bằng chiều cao của thẻ */
+            object-fit: cover; /* Giữ tỷ lệ và không làm biến dạng ảnh */
         }
     </style>
 </head>
