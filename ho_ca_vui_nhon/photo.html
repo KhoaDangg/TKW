@@ -44,12 +44,19 @@
             display: block;
         }
 
-        /* Box ảnh 4, 5, 6 và 9 tự động điều chỉnh kích thước */
+        /* Kích thước ảnh 4, 5, 6, 9 đã giảm mạnh, nên box cũng giảm theo */
+        .image-card:nth-child(4) img,
+        .image-card:nth-child(5) img,
+        .image-card:nth-child(6) img,
+        .image-card:nth-child(9) img {
+            width: 50%; /* Giảm kích thước của ảnh 4, 5, 6, 9 xuống còn 50% */
+        }
+
         .image-card:nth-child(4),
         .image-card:nth-child(5),
         .image-card:nth-child(6),
         .image-card:nth-child(9) {
-            width: auto; /* Box sẽ chỉ rộng bằng với kích thước ảnh */
+            width: auto; /* Box sẽ tự động điều chỉnh theo kích thước ảnh đã giảm */
         }
 
         /* Bỏ phần caption */
