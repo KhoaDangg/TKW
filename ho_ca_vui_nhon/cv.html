@@ -88,20 +88,22 @@
 
         /* Căn giữa ảnh vuông và không làm biến dạng */
         .profile-header {
-            width: 120px;
-            height: 120px;
-            border-radius: 50%; /* Căn tròn ảnh */
+            width: 100%; /* Chiều rộng 100% của thẻ chứa */
+            height: 0;
+            padding-top: 100%; /* Tạo tỉ lệ vuông (dùng padding-top để tạo chiều cao dựa vào chiều rộng) */
+            position: relative;
+            overflow: hidden;
             margin: 0 auto;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            overflow: hidden; /* Đảm bảo ảnh không tràn ra ngoài */
+            background-color: #fff;
         }
 
         .profile-header img {
-            width: 100%; /* Đảm bảo ảnh chiếm hết diện tích của thẻ chứa */
-            height: 100%; /* Chiều cao của ảnh bằng chiều cao của thẻ */
-            object-fit: cover; /* Giữ tỷ lệ và không làm biến dạng ảnh */
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Đảm bảo ảnh không bị nén và giữ nguyên tỷ lệ */
         }
     </style>
 </head>
